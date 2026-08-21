@@ -9,111 +9,43 @@
 body{font-family:Arial,"Noto Sans Bengali",sans-serif;background:#f6f7fb;color:#171923}
 header{background:#111827;color:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}
 .nav{max-width:1100px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.logo{font-size:22px;font-weight:800;letter-spacing:.5px}
-.logo span{font-size:12px;color:#a5b4fc;display:block;font-weight:500}
+.logo{font-size:22px;font-weight:800;letter-spacing:.5px}.logo span{font-size:12px;color:#a5b4fc;display:block;font-weight:500}
 nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
 .hero{background:linear-gradient(135deg,#111827,#312e81);color:white;padding:75px 20px;text-align:center}
-.hero h1{font-size:clamp(34px,7vw,62px);margin-bottom:12px}
-.hero p{font-size:18px;color:#e5e7eb;max-width:650px;margin:0 auto 25px}
-.btn{display:inline-block;background:#fff;color:#111827;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700;margin:5px}
-.btn.primary{background:#4f46e5;color:white}
-.container{max-width:1100px;margin:auto;padding:45px 20px}
-.title{text-align:center;margin-bottom:25px}
-.title h2{font-size:30px}.title p{color:#6b7280;margin-top:7px}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
-.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 5px 20px #1111;border:1px solid #eee}
-.pic{height:180px;background:#eef0ff;display:flex;align-items:center;justify-content:center;font-size:55px}
-.info{padding:17px}.info h3{font-size:18px;margin-bottom:8px}.price{font-size:20px;font-weight:800;margin-bottom:12px}
-.order{display:block;text-align:center;background:#111827;color:white;text-decoration:none;padding:11px;border-radius:9px;font-weight:700}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.feature{background:white;padding:25px;border-radius:15px;text-align:center;border:1px solid #eee}
-.feature b{display:block;font-size:18px;margin:10px 0 5px}.feature p{color:#6b7280;font-size:14px}
-.contact{background:#111827;color:white;border-radius:20px;padding:35px;text-align:center}
-.contact p{color:#d1d5db;margin:10px 0 20px}
-footer{text-align:center;padding:25px;color:#6b7280;font-size:13px}
+.hero h1{font-size:clamp(34px,7vw,62px);margin-bottom:12px}.hero p{font-size:18px;color:#e5e7eb;max-width:650px;margin:0 auto 25px}
+.btn{display:inline-block;background:#fff;color:#111827;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700;margin:5px}.btn.primary{background:#4f46e5;color:white}
+.container{max-width:1100px;margin:auto;padding:45px 20px}.title{text-align:center;margin-bottom:25px}.title h2{font-size:30px}.title p{color:#6b7280;margin-top:7px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 5px 20px #1111;border:1px solid #eee}
+.pic{height:180px;background:#eef0ff;display:flex;align-items:center;justify-content:center;font-size:55px;cursor:pointer;text-decoration:none;color:#171923;overflow:hidden}.pic img{width:100%;height:100%;object-fit:contain;padding:10px;transition:transform .2s}.pic:hover img{transform:scale(1.05)}
+.info{padding:17px}.info h3{font-size:18px;margin-bottom:8px}.price{font-size:20px;font-weight:800;margin-bottom:12px}.details{display:block;text-align:center;color:#4f46e5;text-decoration:none;font-weight:700;margin-bottom:10px}.order{display:block;text-align:center;background:#111827;color:white;text-decoration:none;padding:11px;border-radius:9px;font-weight:700}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}.feature{background:white;padding:25px;border-radius:15px;text-align:center;border:1px solid #eee}.feature b{display:block;font-size:18px;margin:10px 0 5px}.feature p{color:#6b7280;font-size:14px}
+.contact{background:#111827;color:white;border-radius:20px;padding:35px;text-align:center}.contact p{color:#d1d5db;margin:10px 0 20px}footer{text-align:center;padding:25px;color:#6b7280;font-size:13px}
 @media(max-width:650px){nav{display:none}.hero{padding:55px 15px}.container{padding:35px 15px}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="nav">
-    <div class="logo">TN TECHNOLOGY<span>Mobile Accessories</span></div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero" id="home">
-  <h1>TN TECHNOLOGY</h1>
-  <p>আপনার প্রয়োজনীয় Mobile Charger, Cable, Headphone ও আরও অনেক Accessories এক জায়গায়।</p>
-  <a class="btn primary" href="#products">Products দেখুন</a>
-  <a class="btn" href="https://wa.me/8801606191562" target="_blank">WhatsApp Order</a>
-</section>
-
-<section class="container" id="products">
-  <div class="title">
-    <h2>আমাদের Products</h2>
-    <p>পণ্যের নাম ও দাম নিচের জায়গা থেকে সহজেই পরিবর্তন করতে পারবেন।</p>
-  </div>
-
-  <div class="products" id="productList"></div>
-</section>
-
-<section class="container">
-  <div class="title">
-    <h2>কেন TN TECHNOLOGY?</h2>
-  </div>
-  <div class="features">
-    <div class="feature">⚡<b>Quality Products</b><p>ভালো মানের accessories বেছে নেওয়ার সুযোগ।</p></div>
-    <div class="feature">💬<b>Easy Order</b><p>WhatsApp-এ সরাসরি অর্ডার বা যোগাযোগ করুন।</p></div>
-    <div class="feature">📱<b>Mobile Friendly</b><p>ফোন ও PC—দুই জায়গাতেই সুন্দরভাবে চলবে।</p></div>
-  </div>
-</section>
-
-<section class="container" id="contact">
-  <div class="contact">
-    <h2>যোগাযোগ করুন</h2>
-    <p>পণ্য বা দাম জানতে WhatsApp-এ মেসেজ করুন।</p>
-    <a class="btn primary" href="https://wa.me/8801606191562" target="_blank">WhatsApp: 01606191562</a>
-    <p style="margin-top:22px">Facebook: <strong>আপনার Facebook Link এখানে বসান</strong></p>
-  </div>
-</section>
-
+<header><div class="nav"><div class="logo">TN TECHNOLOGY<span>Mobile Accessories</span></div><nav><a href="#home">Home</a><a href="#products">Products</a><a href="#contact">Contact</a></nav></div></header>
+<section class="hero" id="home"><h1>TN TECHNOLOGY</h1><p>আপনার প্রয়োজনীয় Mobile Charger, Cable, Headphone ও আরও অনেক Accessories এক জায়গায়।</p><a class="btn primary" href="#products">Products দেখুন</a><a class="btn" href="https://wa.me/8801606191562" target="_blank">WhatsApp Order</a></section>
+<section class="container" id="products"><div class="title"><h2>আমাদের Products</h2><p>ছবিতে click করলে product-এর details দেখুন।</p></div><div class="products" id="productList"></div></section>
+<section class="container"><div class="title"><h2>কেন TN TECHNOLOGY?</h2></div><div class="features"><div class="feature">⚡<b>Quality Products</b><p>ভালো মানের accessories বেছে নেওয়ার সুযোগ।</p></div><div class="feature">💬<b>Easy Order</b><p>WhatsApp-এ সরাসরি অর্ডার বা যোগাযোগ করুন।</p></div><div class="feature">📱<b>Mobile Friendly</b><p>ফোন ও PC—দুই জায়গাতেই সুন্দরভাবে চলবে।</p></div></div></section>
+<section class="container" id="contact"><div class="contact"><h2>যোগাযোগ করুন</h2><p>পণ্য বা দাম জানতে WhatsApp-এ মেসেজ করুন।</p><a class="btn primary" href="https://wa.me/8801606191562" target="_blank">WhatsApp: 01606191562</a><p style="margin-top:22px">Facebook: <strong>আপনার Facebook Link এখানে বসান</strong></p></div></section>
 <footer>© 2026 TN TECHNOLOGY — All Rights Reserved</footer>
-
 <script>
-// ===============================
-// PRODUCT UPDATE AREA
-// এখানে product-এর নাম, দাম ও emoji পরিবর্তন করুন
-// ===============================
 const products = [
-  {name:"20W Fast Charger", price:"৳500", icon:'<img src="./Screenshot%202026-08-21%20232212.png" alt="20W Fast Charger" style="width:100%;height:160px;object-fit:contain;">'},
-  {name:"Type-C Cable", price:"৳80", icon:'<img src="./Screenshot%202026-08-22%20000556.png" alt="Type-C Cable" style="width:100%;height:160px;object-fit:contain;">'},
-  {name:"Type-C Earphone", price:"৳150", icon:'<img src="./Codex%20Image%20Aug%2021%2C%202026%2C%2011_46_16%20PM.png" alt="Type-C Earphone" style="width:100%;height:160px;object-fit:contain;">'},
-  {name:"Power Bank", price:"৳1500", icon:'<img src="./Screenshot%202026-08-22%20001239.png" alt="Power Bank" style="width:100%;height:160px;object-fit:contain;">'},
-  {name:"Mobile Cover", price:"৳150", icon:"📱"},
-  {name:"Tempered Glass", price:"৳100", icon:"🛡️"},
-  {name:"Power Bank", price:"৳1500", icon:"🔋"}
+  {name:"20W Fast Charger",price:"৳500",image:"./Screenshot%202026-08-21%20232212.png",description:"দ্রুত চার্জিংয়ের জন্য 20W Fast Charger।",details:""},
+  {name:"Type-C Cable",price:"৳80",image:"./Screenshot%202026-08-22%20000556.png",description:"দৈনন্দিন চার্জ ও data transfer-এর জন্য Type-C Cable।",details:""},
+  {name:"Type-C Earphone",price:"৳150",image:"./Codex%20Image%20Aug%2021%2C%202026%2C%2011_46_16%20PM.png",description:"Type-C port-এর জন্য আরামদায়ক earphone।",details:""},
+  {name:"Power Bank",price:"৳1500",image:"./Screenshot%202026-08-22%20001239.png",description:"ফোনের চার্জ শেষ হলে সঙ্গে রাখার জন্য Power Bank।",details:""},
+  {name:"Mobile Cover",price:"৳150",icon:"📱",description:"ফোন সুরক্ষার জন্য Mobile Cover।",details:""},
+  {name:"Tempered Glass",price:"৳100",icon:"🛡️",description:"স্ক্রিন সুরক্ষার জন্য Tempered Glass।",details:""}
 ];
-
-const phone = "8801606191562";
-const list = document.getElementById("productList");
-
-products.forEach(p => {
-  const msg = encodeURIComponent(`আসসালামু আলাইকুম, আমি ${p.name} নিতে চাই। দাম: ${p.price}`);
-  list.innerHTML += `
-    <div class="card">
-      <div class="pic">${p.icon}</div>
-      <div class="info">
-        <h3>${p.name}</h3>
-        <div class="price">${p.price}</div>
-        <a class="order" href="https://wa.me/${phone}?text=${msg}" target="_blank">WhatsApp-এ অর্ডার</a>
-      </div>
-    </div>`;
+const phone="8801606191562";
+const list=document.getElementById("productList");
+products.forEach(p=>{
+  const detailUrl="product.html?"+new URLSearchParams({name:p.name,price:p.price,image:p.image||"",icon:p.icon||"",description:p.description,details:p.details});
+  const msg=encodeURIComponent(`আসসালামু আলাইকুম, আমি ${p.name} নিতে চাই। দাম: ${p.price}`);
+  const picture=p.image?`<img src="${p.image}" alt="${p.name}">`:p.icon;
+  list.innerHTML+=`<div class="card"><a class="pic" href="${detailUrl}" aria-label="${p.name} details">${picture}</a><div class="info"><h3>${p.name}</h3><div class="price">${p.price}</div><a class="details" href="${detailUrl}">Details দেখুন</a><a class="order" href="https://wa.me/${phone}?text=${msg}" target="_blank">WhatsApp-এ অর্ডার</a></div></div>`;
 });
 </script>
 </body>
